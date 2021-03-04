@@ -1,0 +1,302 @@
+@charset "UTF-8";
+html{
+   font-size: 100%;
+}
+body{
+   line-height: 1.7;
+   color: black;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+li{
+   list-style: none;
+}
+.page-header{
+  position: fixed;
+  width: 100%;
+   
+}
+.main-nav{
+   display: flex;
+   font-size: 1rem;
+   list-style: none;
+   
+}
+.main-nav li{
+   margin-left: 0px;
+   display: block;
+}
+.main-nav a{
+   font-weight: bolder;
+   display: block;
+   padding: 7px 10px;
+}
+.main-nav a:hover{
+   background-color: rgba(0, 0, 0, 0.5)
+}
+
+.header-menu{
+   display: inline-block;
+   top: 40px;
+   left: -200px;
+   transition: all 0.3s;
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   height: 90vh;
+}
+
+.m-header .close{
+   left: 0;
+   transition: all 0.3s;
+}
+.header-menu a{
+   font-weight: bold;
+   padding: 10px 55px;
+   display: block;
+   background-color: rgb(255, 255, 255);
+}
+
+.header-menu a:hover{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.header-menu li{
+   text-align: center;
+   padding: 0px 0px;
+   border-bottom: 1px solid;
+}
+
+.page-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: white;
+   height: 40px;
+   padding: 0 10%;
+   margin: 0 auto;
+}
+
+.logo{
+   display: flex;
+   
+}
+.logo a{
+   padding: 0 20px;
+   font-size: 1.5rem;
+   align-items: center;
+   
+}
+.logo a:hover{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index{
+   padding-top: 5%;
+   text-align: center;
+   background-color: rgb(249, 249, 249);
+   width: 100vw;
+   padding-bottom: 10px;
+
+}
+main h2{
+   font-size: 3rem;
+}
+main p{
+   font-size: １rem;
+}
+.text-wrapper{
+   width: 50%;
+   margin: 0 auto;
+   margin-bottom: 60px;
+}
+.text-wrapper img{
+   width: 40%;
+
+}
+
+footer{
+   padding-top: 1%;
+   text-align: center;
+   font-size: 1rem;
+   
+}
+.item-wrapper{
+   padding-top: 0%;
+   max-width: 500px;
+   margin: 0 auto;
+}
+.items{
+   padding-left: 5px;
+   height: 80px;
+   width: 100%;
+   display: flex;
+   margin: 0 auto;
+   background-color: rgb(255, 255, 255);
+   align-items: center;
+   margin-bottom: 20px;
+   border-radius: 5px;
+}
+.items img{
+   padding-left: 1%;
+   max-width: 80%;
+   max-height: 80%;
+   
+}
+.items h3{
+   display: inline-block;
+   font-size: 2rem;
+   
+   margin:0 20px;
+}
+.items p{
+   font-size: 0.8rem;
+  
+   
+}
+#skill{
+   padding-top: 5%;
+   text-align: center;
+   background-color: rgb(231, 231, 231);
+   width: 100vw;
+   padding-bottom: 10px;
+}
+
+.profile-wrapper{
+   width: 80%;
+   background-color: white;
+   margin: 0 auto;
+   display: flex;
+   margin-bottom: 10px;
+
+}
+
+.profile-wrapper img{
+   width: 50%;
+}
+.profile-wrapper h2{
+   margin-top: 10px;
+  
+   font-size: 3rem;
+   
+   
+}
+.profile-wrapper h3{
+   font-size: 1.5rem;
+   margin-top: 20px;
+   padding: 0 10px;
+}
+.contact-wrapper{
+   margin-top:50px;
+   margin-bottom: 60px;
+}
+.contact-wrapper i{
+   margin-right: 10px;
+}
+.contact-wrapper h1{
+ margin-top: 30px;
+}
+.contact-wrapper h1 a:hover{
+   color: rgb(61, 186, 249);
+   
+   transition: 0.3s;
+}
+
+
+#menu-container{
+   
+   margin-top: 3px;
+   margin-left: 10px;
+   position: relative;
+   padding: 1px;
+   cursor: pointer;
+   transform: translateY(0px);
+   position: fixed;
+   display: none;
+}
+.circle{
+   position: relative;
+   width: 30px;
+   height: 30px;
+}
+.bar{
+   position: absolute;
+   height: 4px;
+   width: 100%;
+   background-color: black;
+   border-radius: 10px;
+   transition: ease 0.3s;
+   
+}
+.top{
+   top: 18%;
+}
+.middle{
+   top: 48%;
+}
+.bottom{
+   top: 77%;
+}
+.close .top{
+   transform: rotate(45deg);
+   top: 48%;
+}
+.close .middle{
+   opacity: 0 ;
+}
+.close .bottom{
+   transform: rotate(-45deg);
+   top: 48%;
+}
+
+
+@media(max-width:700px){
+   .text-wrapper{
+      width: 100%;
+   }
+   
+   .profile-wrapper{
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 10px;
+   }
+   .profile-wrapper h2{
+      font-size: 2rem;
+   }
+   .profile-wrapper h3{
+      font-size: 1rem;
+      margin-top: 10px;
+   }
+   .profile-wrapper img{
+      width: 50%;
+      margin: 0 auto;
+   }
+   .item-wrapper{
+      width: 80%;
+      margin: 40px auto;
+
+   }
+   #skill h3{
+      font-size: 1rem;
+      margin: 10px;
+   }
+   #skill p{
+      font-size: 0.5rem;
+      padding-right: 10px;
+      
+   }
+   #index{
+     padding-top: 60px;
+   }
+   .main-nav{
+      display: none;
+   }
+   .logo{
+      margin: 0 auto;
+      
+   }
+   #menu-container{
+      display: inline-block;
+   }  
+   
+}

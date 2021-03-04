@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teba - ポートフォリオ</title>
+   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="icon" href="./images/4auyvikD_400x400.jpg" type="image/png">
+</head>
+<body>
+   <header class="page-header wrapper">
+      
+      <h1 class="logo"><a href="#">Teba_eleven
+      </a></h1>
+      <nav>
+         <ul class="main-nav">
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <div id="menu-container">
+      <div class="circle icon">
+         <span class="bar top"></span>
+         <span class="bar middle"></span>
+         <span class="bar bottom"></span>
+      </div>
+   </div>
+   
+   <main id="index">
+      <div class="text-wrapper">
+         <img src="./images/4auyvikD_400x400.jpg" alt="">
+         <h2>Teba_eleven</h2>
+         <p>プログラミング初心者です。（JavaScriptとかRubyとか）今までScratchでゲーム開発ばっかしてました！</p>
+      </div>
+   </main>
+<div class="m-header">
+   <div class="header-menu">
+      <ul>
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./profile.html">Profile</a></li>
+         <li><a href="./skill.html">Skill</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+      </ul>
+   </div>
+</div>
+   <footer>
+      <p><small><span>&copy;</span>made by Teba_eleven</small></p>
+   </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+      $("#menu-container").click(function(){
+         $(".icon").toggleClass("close");
+         $(".header-menu").toggleClass("close");
+      })
+   </script>
+</body>
+</html>

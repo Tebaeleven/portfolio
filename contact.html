@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teba - ポートフォリオ</title>
+   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="icon" href="./images/4auyvikD_400x400.jpg" type="image/png">
+   <script src="https://kit.fontawesome.com/0b7eefbc0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header class="page-header wrapper">
+      <h1 class="logo"><a href="./index.html">Teba_eleven
+      </a></h1>
+      <nav>
+         <ul class="main-nav">
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div id="menu-container">
+      <div class="circle icon">
+         <span class="bar top"></span>
+         <span class="bar middle"></span>
+         <span class="bar bottom"></span>
+      </div>
+   </div>
+   <main id="index">
+      <div class="contact-wrapper">
+         <h1><a href="https://twitter.com/Teba_eleven"><i class="fab fa-twitter"></i>Twitter</a> </h1>
+         <h1><a href="https://www.youtube.com/channel/UCvhedPdAWtF9Ji6fLXDYiAA"><i class="fab fa-youtube"></i>YouTube</a> </h1>
+         <h1><a href="https://github.com/Tebaeleven"><i class="fab fa-github"></i>Github</a> </h1>
+         <h1><a href="https://www.geartics.com/Teba_eleven"><i class="fas fa-cog"></i>使用デバイス</a></h1>
+      </div>
+   </main>
+   <div class="m-header">
+      <div class="header-menu">
+         <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+         </ul>
+      </div>
+   </div>
+   <footer>
+      <p><small><span>&copy;</span>made by Teba_eleven</small></p>
+   </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+      $("#menu-container").click(function(){
+         $(".icon").toggleClass("close");
+         $(".header-menu").toggleClass("close");
+      })
+   </script>
+</body>
+</html>
