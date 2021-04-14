@@ -42,7 +42,7 @@ li{
    top: 40px;
    left: -200px;
    transition: all 0.3s;
-   background-color: rgb(255, 255, 255);
+   background-color: red;
    position: fixed;
    height: 90vh;
 }
@@ -251,6 +251,9 @@ footer{
 
 
 @media(max-width:700px){
+   .header-menu{
+      display: inline-block;
+   }
    .text-wrapper{
       width: 100%;
    }
@@ -298,8 +301,6 @@ footer{
    #menu-container{
       display: inline-block;
    }  
-   .header-menu{
-      display:inline-block;
-   }
+   
    
 }
